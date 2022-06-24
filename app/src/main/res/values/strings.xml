@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">multi_media_player</string>
+    <string name="music">listen to music</string>
+    <string name="video">watch the video</string>
+    <string name="get_file">Get file</string>
+    <string name="file">文件</string>
+    <string name="picture_singer">歌手照片</string>
+    <string name="song_content">歌曲信息</string>
+    <string name="back">返回</string>
+    <string name="time_begin">00:00/00:00</string>
+</resources>

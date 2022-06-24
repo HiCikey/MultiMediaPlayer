@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".video.VideoActivity">
+
+    <VideoView
+        android:id="@+id/video_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:id="@+id/control_up"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#9999">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back" />
+
+        <Button
+            android:id="@+id/choose_file"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/files" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/control_below"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/video_view"
+        android:background="#9999">
+
+        <Button
+            android:id="@+id/btn_play_video"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/play_video" />
+
+        <Button
+            android:id="@+id/btn_pause_video"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/pause_video" />
+
+        <SeekBar
+            android:id="@+id/seekbar_video"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/time_video"
+            android:layout_toLeftOf="@+id/time_video"
+            android:layout_toEndOf="@+id/btn_play_video"
+            android:layout_toRightOf="@+id/btn_play_video" />
+
+        <TextView
+            android:id="@+id/time_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toStartOf="@+id/screen_change"
+            android:layout_toLeftOf="@+id/screen_change"
+            android:text="@string/time_begin"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/screen_change"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/screen_change" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
