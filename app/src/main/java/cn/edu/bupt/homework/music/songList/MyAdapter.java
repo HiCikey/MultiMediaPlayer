@@ -6,8 +6,6 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.recyclerview.widget.RecyclerView;
-
 import cn.edu.bupt.homework.R;
 
 /**
